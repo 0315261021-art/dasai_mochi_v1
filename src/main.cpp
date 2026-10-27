@@ -516,9 +516,9 @@ void setup(void) {
       
     u8g2.clearBuffer();
     u8g2.setFont(Dongle_20);
-    u8g2.drawStr(30, 35, "by khanh");
+    u8g2.drawStr(30, 35, "bao ngocc");
     u8g2.sendBuffer();
-    delay(2000);
+    delay(5000);
     shuffleVector(allGifPointers); // Xáo trộn mảng GIF một lần lúc khởi động
     xTaskCreatePinnedToCore(
       gifTask,          // Hàm task
